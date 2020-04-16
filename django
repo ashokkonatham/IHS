@@ -1,0 +1,10 @@
+# check for the version of python and pip in Ananconda prompt
+# once available then install the django
+# cmd - install virtyalenvwrapper-win
+# just install the wrapper, now need to create the env
+# cmd - mkvirtualenv test
+# cmd - pip install django -- install django
+# create a folder for projects mkdir projects
+# django-admin startproject webdeve -- new folder in projects created
+# cdm - python manage.py runserver -- to run the light weight django server
+
