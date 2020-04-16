@@ -3145,3 +3145,269 @@ df8 = pd.read_excel('/project/messy_inpu.xlsx', sheet_name='Trans1',skiprows=2,
                     converters={'ID' : str}, parse_dates={'Date' :['Month', 'Day' ,'Year']}, keep_date_col=True)
 
 
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+r=1
+x=2*r
+if(r==1):
+    print("even")
+else:
+    print("odd")
+x
+
+
+# In[2]:
+
+
+x = 10
+if x==1:
+    print("one")
+elif x==2:
+    print("Two")
+elif x==3:
+    print("Three")
+elif x==4:
+    print("Four")
+else:
+    print("wrong")
+
+
+# In[21]:
+
+
+#while loop or for loop
+i=1
+while i <= 5: 
+    print("Telusko")
+    i=i+1
+
+
+# In[26]:
+
+
+#while loop or for loop
+i=5
+j=1
+while i > 1: 
+    print("Telusko")
+    while j <= 4:
+        print("sec")
+        j=j+1
+    i=i-1
+
+
+# In[30]:
+
+
+#for loop
+x=[1,2,3,4,5,"ashok"]
+for i in x:
+    print(i)
+
+
+# In[37]:
+
+
+for i in range(20,10,-2):
+    print(i)
+
+
+# In[45]:
+
+
+for i in range(1,10,1):
+    if i%5!=0:
+        print(i)
+
+
+# In[3]:
+
+
+def greet():
+    print("hello")
+    print("Good Morning")
+greet()
+
+
+# In[5]:
+
+
+for i in range(4):
+    greet()
+
+
+# In[10]:
+
+
+# define a funtion with x and y arguments
+def add(x,y):
+    c=x+y
+    print(c)
+add(2,3)
+
+
+# In[11]:
+
+
+# now I want to save the value instead of print, here values are added but not printed
+def add(x,y):
+    c=x+y
+    return c
+
+
+# In[13]:
+
+
+result=add(3,4)
+result
+
+
+# In[18]:
+
+
+# funtion with 2 variable
+def add_sub(x,y):
+    c=x+y
+    d=x-y
+    return c,d
+#as we are defining 2 values it should be called 2 time
+
+result1, result2 =add_sub(2,3)
+print(result1,result2)
+
+
+# In[25]:
+
+
+def update():
+    x=8
+    print(x)
+    
+a=10
+update()
+
+
+# In[26]:
+
+
+lst=[10,10,23]
+print(id(lst))
+
+
+# In[27]:
+
+
+lst[1]=200
+print(id(lst))
+
+
+# In[8]:
+
+
+# keyword variable lenght argument (KWARG)
+
+def multi(**kwa):
+    
+    for i,j in kwa.items():
+        print(i,j)
+        
+multi(name="ashok", age=43, Citizen="Singapore", cell=89097789)
+
+
+# In[23]:
+
+
+# function :- febonacci numbers
+def febo(x):
+    a=0
+    b=1
+    print(a)
+    
+    for i in range(2,x):
+        c=a+b
+        a=b
+        b=c
+        print(c)
+        
+febo(10)
+
+
+# In[43]:
+
+
+def fact(n):
+    a=1
+    for i in range(1,n+1):
+        a=a*i
+    return a
+x=4
+result=fact(x)
+
+print(result)
+# In[10]:
+
+
+#math
+import math
+r=math.sqrt(10)
+c=math.ceil(10.2)
+f=math.floor(2.3)
+p=math.pow(3,2)
+pi=math.pi
+e=math.e
+r,c,f,p,pi,e
+
+
+# In[1]:
+
+
+print(__name__)
+
+
+# ### OOPS
+
+# In[5]:
+
+
+class computer:
+    
+    def config(self):
+        print("Ashok, the Data Scientist")
+comp1=computer()
+
+computer.config(comp1)
+
+
+# In[6]:
+
+
+comp1.config()
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
